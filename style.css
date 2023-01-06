@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: font-family: 'Ubuntu Mono', monospace;;
+}
+
+h1{
+    color: brown;
+    margin-bottom: 2.5rem;
+}
+canvas {
+    border: 3px solid brown;
+}
