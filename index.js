@@ -22,7 +22,12 @@ let velocityY = 0;
 
 let game_over = false;
 
-window.onload = () => {}
+window.onload = () => {
+    board = document.getElementById('board');
+    context = board.getContext('2d');
+
+    
+}
 
 function update(){}
 
@@ -35,4 +40,5 @@ function game_overEvent(){}
 function createRect(){}
 
 function createText(){}
+
 
