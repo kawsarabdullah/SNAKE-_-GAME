@@ -23,13 +23,35 @@ let velocityY = 0;
 let game_over = false;
 
 window.onload = () => {
+
     board = document.getElementById('board');
     context = board.getContext('2d');
 
+    aoppleAudio = new Audio('apple_sound.mp3');
+    gameOverAudio = new Audio('game_over.mp3');
+
+    board.width = cols * blockSize;
+    board.height = rows * blockSize;
+
+    document.addEventListener('keyup', changeDirection)
+
+    board.addEventListener('click', () = {
+        gameOver = false;
+        score = 0;
+    })
+
+    foodPlace();
+    setInterval(update, 1000/10);
     
 }
 
-function update(){}
+function update(){
+
+    // Clear Screen
+    createRect(0, 0, board.width, board.height);
+
+    
+}
 
 function foodPlace(){}
 
