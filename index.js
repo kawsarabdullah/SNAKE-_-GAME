@@ -1,12 +1,12 @@
 
 let board;
 let context;
-let blocksize = 20;
+let blockSize = 20;
 let cols = 30;
 let rows = 20;
 
-let bite_food;
-let game_over;
+let appleAudio;
+let gameOverAudio;
 
 let snakeX = 0;
 let snakeY = 0;
@@ -20,7 +20,7 @@ let score = 0;
 let velocityX = 1;
 let velocityY = 0;
 
-let game_over = false;
+let gameOver = false;
 
 window.onload = () => {
 
@@ -35,7 +35,7 @@ window.onload = () => {
 
     document.addEventListener('keyup', changeDirection)
 
-    board.addEventListener('click', () = {
+    board.addEventListener('click', () => {
         gameOver = false;
         score = 0;
     })
@@ -67,7 +67,7 @@ function update(){
     if(snakeX == foodX && snakeY == foodY){
         tail.push([foodX, foodY]);
 
-        score =+ 10:
+        score =+ 10;
 
         appleAudio.play();
 
@@ -87,7 +87,7 @@ function update(){
     snakeX += velocityX * blockSize;
     snakeY += velocityY * blockSize;
 
-    createRect(snakeX, snakeY, blocksize, 'orange');
+    createRect(snakeX, snakeY, blockSize, 'orange');
 
     for(let i = 0; i < tail.length; i++){
         createRect(tail[i][0], tail[i][1], blockSize, blockSize, 'lime');
