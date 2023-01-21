@@ -90,7 +90,7 @@ function update(){
     createRect(snakeX, snakeY, blocksize, 'orange');
 
     for(let i = 0; i < tail.length; i++){
-        createRect(tail[i][0], tail[i][1], blockSize, blockSize, '')
+        createRect(tail[i][0], tail[i][1], blockSize, blockSize, 'lime')
     }
 
 }
