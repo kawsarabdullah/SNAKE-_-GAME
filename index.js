@@ -143,6 +143,11 @@ function createRect(x, y, width, height, color = "black"){
     context.fillRect(x, y, width, height);
 }
 
-function createText(){}
+function createText(text, x, y, textAlign = "start", fontSize = 20){
+    context.fillstyle = "lime";
+    context.font = `${fontSize}px Roboto Mono`;
+    context.textAlign = textAlign;
+    context.fillText(text, x, y);
+}
 
 
