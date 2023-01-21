@@ -138,7 +138,10 @@ function game_overEvent(){
     velocityY = 0;
 }
 
-function createRect(){}
+function createRect(x, y, width, height, color = "black"){
+    context.fillstyle = color;
+    context.fillRect(x, y, width, height);
+}
 
 function createText(){}
 
