@@ -90,7 +90,19 @@ function update(){
     createRect(snakeX, snakeY, blocksize, 'orange');
 
     for(let i = 0; i < tail.length; i++){
-        createRect(tail[i][0], tail[i][1], blockSize, blockSize, 'lime')
+        createRect(tail[i][0], tail[i][1], blockSize, blockSize, 'lime');
+    }
+
+    //hit the wall
+    if(snakeX < 0 || snakeX > cols * blockSize || snakeY < 0 || snakeY > rows * blockSize){
+        gameOverEvent()
+    }
+
+    //shot herself
+    for(let i = 0; i < tail.length; i++){
+        if(snakeX == tail[i][0] && snakeY == tail[i][1]){
+            gameOverEvent()
+        }
     }
 
 }
