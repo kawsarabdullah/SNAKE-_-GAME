@@ -128,7 +128,15 @@ function changeDirection(e){
     }
 }
 
-function game_overEvent(){}
+function game_overEvent(){
+    gameOver = true;
+    gameOverAudio.play();
+    tail = [];
+    snakeX = 0;
+    snakeY = 0;
+    velocityX = 1;
+    velocityY = 0;
+}
 
 function createRect(){}
 
