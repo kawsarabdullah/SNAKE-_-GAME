@@ -28,7 +28,7 @@ window.onload = () => {
     context = board.getContext('2d');
 
     appleAudio = new Audio('apple_sound.mp3');
-    gameOverAudio = new Audio('game_over.mp3');
+    gameOverAudio = new Audio('game_over_sound.mp3');
 
     board.width = cols * blockSize;
     board.height = rows * blockSize;
