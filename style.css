@@ -1,16 +1,16 @@
 body{
-    background-color: black;
+    background-color: rgb(14, 7, 7);
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: font-family: 'Ubuntu Mono', monospace;;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 h1{
-    color: brown;
+    color: rgb(0, 183, 255);
     margin-bottom: 2.5rem;
 }
 canvas {
-    border: 3px solid #c21b1b;
+    border: 3px solid rgb(21, 180, 219);
 }
