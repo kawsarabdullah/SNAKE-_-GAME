@@ -80,7 +80,7 @@ function update(){
     }
 
     if(tail.length){
-        tail[0] = [snakeX, snakeY]
+        tail[0] = [snakeX, snakeY];
     }
 
     //snake position
@@ -144,8 +144,8 @@ function createRect(x, y, width, height, color = "black"){
 }
 
 function createText(text, x, y, textAlign = "start", fontSize = 20){
-    context.fillstyle = "lime";
-    context.font = `${fontSize}px Roboto Mono`;
+    context.fillstyle = "blue";
+    context.font = `${fontSize}px Ubuntu Mono`;
     context.textAlign = textAlign;
     context.fillText(text, x, y);
 }
