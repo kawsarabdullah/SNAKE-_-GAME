@@ -67,7 +67,7 @@ function update(){
     if(snakeX == foodX && snakeY == foodY){
         tail.push([foodX, foodY]);
 
-        score =+ 10;
+        score += 10;
 
         appleAudio.play();
 
@@ -128,7 +128,7 @@ function changeDirection(e){
     }
 }
 
-function game_overEvent(){
+function gameOverEvent(){
     gameOver = true;
     gameOverAudio.play();
     tail = [];
