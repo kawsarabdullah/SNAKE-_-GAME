@@ -8,9 +8,9 @@ body{
 }
 
 h1{
-    color: rgb(0, 183, 255);
+    color: rgb(22, 189, 201);
     margin-bottom: 2.5rem;
 }
 canvas {
-    border: 3px solid rgb(21, 180, 219);
+    border: 3px solid rgb(15, 128, 156);
 }
